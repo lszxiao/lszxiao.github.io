@@ -170,6 +170,163 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-课程笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/05/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">课程笔记</a>
+    </h1>
+  
+
+        
+        
+        <a href="/2020/03/05/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+  	<time datetime="2020-03-05T03:40:56.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-05</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="4-1-进程"><a href="#4-1-进程" class="headerlink" title="4 . 1 进程"></a>4 . 1 进程</h2>
+        
+          <a class="article-more-a" href="/2020/03/05/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">随笔，笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/05/%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-蛇形填数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/04/%E8%9B%87%E5%BD%A2%E5%A1%AB%E6%95%B0/">蛇形填数</a>
+    </h1>
+  
+
+        
+        
+        <a href="/2020/03/04/%E8%9B%87%E5%BD%A2%E5%A1%AB%E6%95%B0/" class="archive-article-date">
+  	<time datetime="2020-03-04T04:26:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目："><a href="#题目：" class="headerlink" title="题目："></a>题目：</h2><p>在nxn的方阵里面填入1,2，…，nxn，要求填成蛇形，例如，n=4时的方阵为：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">10</span>	<span class="number">11</span>	<span class="number">12</span>	<span class="number">1</span></span><br><span class="line"> <span class="number">9</span>		<span class="number">16</span>	<span class="number">13</span>	<span class="number">2</span></span><br><span class="line"> <span class="number">8</span>		<span class="number">15</span>	<span class="number">14</span>	<span class="number">3</span></span><br><span class="line"> <span class="number">7</span> 	<span class="number">6</span> 	<span class="number">5</span> 	<span class="number">4</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> m 20</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> s[m][m]=&#123;<span class="number">0</span>&#125;,x,y,n;</span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;n;<span class="comment">//读入n*n的数 </span></span><br><span class="line">	<span class="keyword">int</span> top=s[x=<span class="number">0</span>][y=n<span class="number">-1</span>]=<span class="number">1</span>;<span class="comment">//设定开始1的位置 </span></span><br><span class="line">	<span class="keyword">while</span>(top&lt;n*n)&#123;</span><br><span class="line">		<span class="keyword">while</span>(x+<span class="number">1</span>&lt;n &amp;&amp; !s[x+<span class="number">1</span>][y])	s[++x][y]=++top;<span class="comment">//实现1,2,3,4 </span></span><br><span class="line">		<span class="keyword">while</span>(y<span class="number">-1</span>&gt;=<span class="number">0</span> &amp;&amp; !s[x][y<span class="number">-1</span>])	s[x][--y]=++top;</span><br><span class="line">		<span class="keyword">while</span>(x<span class="number">-1</span>&gt;=<span class="number">0</span> &amp;&amp; !s[x<span class="number">-1</span>][y])	s[--x][y]=++top;</span><br><span class="line">		<span class="keyword">while</span>(y+<span class="number">1</span>&lt;n &amp;&amp; !s[x][y+<span class="number">1</span>])	s[x][++y]=++top;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++)&#123;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%3d"</span>,s[i][j]);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"\n"</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="解题思路："><a href="#解题思路：" class="headerlink" title="解题思路："></a>解题思路：</h2><p>最难的莫过于那四个while语句了，我们的判断的原则是：先判断，在移动的原则；这样就有可能出现出界的情况，所以，我们要判断x+1&lt;n;保证不出界，接下来就是我们前面把数组初始化为0了，我们就需要判断是0的才填数。然后再格式化输出就好了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">蓝桥杯</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/04/%E8%9B%87%E5%BD%A2%E5%A1%AB%E6%95%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-快速排序" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -790,161 +947,6 @@
 
 
   
-    <article id="post-数的计算" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/03/%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97/">数的计算</a>
-    </h1>
-  
-
-        
-        
-        <a href="/2020/02/03/%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97/" class="archive-article-date">
-  	<time datetime="2020-02-03T09:40:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>我们要求找出具有下列性质数的个数(包含输入的自然数n):</p>
-<p>先输入一个自然数n(n≤1000),然后对此自然数按照
-        
-          <a class="article-more-a" href="/2020/02/03/%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">蓝桥杯</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/03/%E6%95%B0%E7%9A%84%E8%AE%A1%E7%AE%97/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-统计单词数" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/03/%E7%BB%9F%E8%AE%A1%E5%8D%95%E8%AF%8D%E6%95%B0/">统计单词数</a>
-    </h1>
-  
-
-        
-        
-        <a href="/2020/02/03/%E7%BB%9F%E8%AE%A1%E5%8D%95%E8%AF%8D%E6%95%B0/" class="archive-article-date">
-  	<time datetime="2020-02-03T09:18:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>一般的文本编辑器都有查找单词的功能，该功能可以快速定位特定单词在文章中的位置，有的还能统计出特定单词在文章中出现的次数。
-        
-          <a class="article-more-a" href="/2020/02/03/%E7%BB%9F%E8%AE%A1%E5%8D%95%E8%AF%8D%E6%95%B0/#more">more >></a>
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">蓝桥杯</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/02/03/%E7%BB%9F%E8%AE%A1%E5%8D%95%E8%AF%8D%E6%95%B0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
@@ -1061,6 +1063,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">蓝桥杯,算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">随笔，笔记</a>
               </li>
             
             <div class="clearfix"></div>
