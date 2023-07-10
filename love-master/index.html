@@ -17,23 +17,25 @@
 		<style type="text/css"></style>
 		<script>
 			var str;
-			str = prompt("请输入你的名字,有惊喜！");
-			console.log(str);
-			window.onload = function() {
-				if (str != null && str !="") {
-					//document.getElementById("ai").innerHTML=str;
-					var all = document.getElementsByClassName("ai"); //返回的是数组
-					for (var i = 0; i < all.length; i++) {
-						all[i].innerHTML = str;
+			var str="小洋洋"
+				window.onload = function() {
+					if (str != null && str !="") {
+						//document.getElementById("ai").innerHTML=str;
+						var all = document.getElementsByClassName("ai"); //返回的是数组
+						for (var i = 0; i < all.length; i++) {
+							all[i].innerHTML = str;
+						}
+						
 					}
 				}
-			}
+				
 		</script>
 	</head>
 
 	<body>
-		<audio autoplay="autopaly" loop="loop">
-	<source src="renxi.mp3" type="audio/mp3" /></audio>
+		<audio id="audio" autoplay="autopaly" >
+			<source src="./renxi.mp3" type="audio/mp3" />
+		</audio>
 		<div id="main">
 			<div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
 			<div id="wrap">
@@ -58,7 +60,7 @@
 						<span class="say"></span><br>
 						<span class="say">套路都是我学的，但爱你是真的！ </span><br>
 						<span class="say"> </span><br>
-						<span class="say"> -- 流水账--</span>
+						<span class="say"> -- 刘胜卓--</span>
 						</i></b>
 						</font>
 					</div>
@@ -72,6 +74,8 @@
 		</div>
 		<script>
 			(function() {
+				
+
 				var canvas = $('#canvas');
 				if (!canvas[0].getContext) {
 					$("#error").show();
@@ -131,12 +135,15 @@
 						canvas.unbind("mousemove");
 						canvas.removeClass('hand');
 					}
+					var myAuto = document.getElementById('audio');  
+                    	myAuto.play();
 				}).mousemove(function(e) {
 					var offset = canvas.offset(),
 						x, y;
 					x = e.pageX - offset.left;
 					y = e.pageY - offset.top;
 					canvas.toggleClass('hand', seed.hover(x, y));
+
 				});
 				var seedAnimate = eval(Jscex.compile("async", function() {
 					seed.draw();
@@ -191,13 +198,19 @@
 				}));
 				var textAnimate = eval(Jscex.compile("async", function() {
 					var together = new Date();
-					together.setFullYear(2015, (9 - 1), (2 - 1));
-					together.setHours(9);
+					together.setFullYear(2023, (3 - 1), (18 - 1));
+					together.setHours(12);
 					together.setMinutes(00);
 					together.setSeconds(0);
 					together.setMilliseconds(0);
 					$("#code").show().typewriter();
 					$("#clock-box").fadeIn(500);
+
+					// document.getElementById('clock-box').click(function(){
+					// 	var myAuto = document.getElementById('audio');  
+                    // 	myAuto.play();
+					// });
+					
 					while (true) {
 						timeElapse(together);
 						$await(Jscex.Async.sleep(1000));
